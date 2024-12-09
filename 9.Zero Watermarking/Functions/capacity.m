@@ -1,0 +1,20 @@
+clear all;
+close all;
+clc;
+T=20;
+K=0:1:T;
+S=0:1:T;
+[K,S]=meshgrid(K,S);
+C=S.*(2*K+1).^2;
+surf(K,S,C);
+colormap('jet')
+axis([0,T,0,T,0,35000]);
+% % % set(gca,'XTick',0:5:T,'FontSize',15,'FontName','Times New Roman');
+% % % set(gca,'YTick',0:5:T,'FontSize',15,'FontName','Times New Roman');
+% % % set(gca,'ZTick',0:5000:35000,'FontSize',15,'FontName','Times New Roman');
+set(gca,'XTick',0:5:T,'FontSize',15,'FontName','宋体');
+set(gca,'YTick',0:5:T,'FontSize',15,'FontName','宋体');
+set(gca,'ZTick',0:5000:35000,'FontSize',17,'FontName','宋体');
+% xlabel('\itK');ylabel('\itS');zlabel('Watermark capacity (bit)');
+ xlabel('最大阶数');ylabel('分数参数');zlabel('水印容量(比特)');
+set(gcf, 'position', [0 0 700 500]);

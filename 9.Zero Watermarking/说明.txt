@@ -1,0 +1,8 @@
+mian:主函数
+generation：零水印生成
+verification：零水印验证
+imattack：调整攻击
+AsymmetricTentMap：Tent映射
+Arnold_Scrambling：广义Arnold置乱
+Arnold_Recovery：广义Arnold反置乱
+result：调整输出结果
